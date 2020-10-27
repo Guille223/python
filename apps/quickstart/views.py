@@ -29,4 +29,5 @@ class EntryViewSet(viewsets.ModelViewSet):
     """
     queryset = Entry.objects.all()
     serializer_class = EntrySerializer
+    permission_classes = [permissions.IsAuthenticated]
 
