@@ -14,4 +14,3 @@ class Entry(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     created_by=models.ForeignKey(User, related_name='created_by_user', on_delete=models.CASCADE)
     updated_by=models.ForeignKey(User, related_name='updated_by_user', on_delete=models.CASCADE)
-
